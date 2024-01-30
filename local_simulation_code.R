@@ -1,3 +1,25 @@
+###############################################################################
+# Code to create a simulated dataset to test summix-local
+# Will create AMR-like observed sample  with AFR, EUR, IAM continental-like
+# substructure and reference data for AFR, EUR, IAM continental groups
+###############################################################################
+
+#* Function to generate simulated dataset for local substructure testing
+#* @param numSimulations integer, number of simulation replicates to generate
+#* @param chrData reference dataframe, ideally contains single chromosome and 
+#* must contain columns for AF_AFR, AF_EUR, AF_IAM (references)
+#* @param N_afr integer, number of observed homogenous AFR individuals
+#* @param N_eur integer, number of observed homogenous EUR individuals
+#* @param N_iam integer, number of observed homogenous IAM individuals
+#* @param pi_iam double, proportion of IAM ancestry across chromosome
+#* @param pi_eur double, proportion of EUR ancestry across chromosome
+#* @param pi_afr double, proportion of AFR ancestry across chromosome
+#* @param pi_iam_block double, proportion of IAM ancestry in the changed block
+#* @param regionLength integer, length of region with different proportions in bp
+#* @param N_afr_ref integer, number of reference AFR individuals
+#* @param N_eur_ref integer, number of reference EUR individuals
+#* @param N_iam_ref integer, number of reference IAM individuals
+#* @return list of dataframes containing simulated datasets
 doSimulationsFull <- function(numSimulations = 100, chrData, 
                               N_afr = 5000, N_eur = 5000, N_iam = 5000,
                               pi_iam = 0.25, pi_iam_block = NA, 

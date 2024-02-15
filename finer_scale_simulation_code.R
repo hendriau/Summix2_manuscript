@@ -1,4 +1,18 @@
-######################################################simulate observed and ref, eval summix performance##########################################################
+###############################################################################
+# Code to create simulated observed and reference group AFs, and evaluate performance of Summix
+# Used for finer-scale reference group simulations evaluating summix() and adjAF()
+###############################################################################
+
+# Function to generate simulated dataset of observed and reference group AFs, and evaluate 
+# how well Summix is able to estimate refernce group mixing proportions
+#* @param anc_list character vector of reference groups to be simulated
+#* @param params data frame containing reference group to be simulated and proportions to be simulated for each reference group
+#* @param real_data data frame containing allele frequencies for each of the reference groups in 'anc_list'
+#* @param sample_counts numeric vector of sample sizes to be used when simulating reference groups
+
+#* @return A data frame containing simulated parameters, Summix estimates, and the difference between Summix estimates and parameters
+
+
 sim_obs_ref_evalSummix <- function(anc_list, params, real_data, sample_counts){
 gc()
 
@@ -181,7 +195,14 @@ return(finalframe)
 
 
 
-######################################################simulate observed and ref for adjAF eval##########################################################
+
+# Function to generate simulated dataset of observed and reference group AFs for evaluation of adjAF()
+#* @param anc_list character vector of reference groups to be simulated
+#* @param params data frame containing reference group to be simulated and proportions to be simulated for each reference group
+#* @param real_data data frame containing allele frequencies for each of the reference groups in 'anc_list'
+#* @param sample_counts numeric vector of sample sizes to be used when simulating reference groups
+
+#* @return A data frame containing the inputted real data and simulated reference and observed group AFs
 
 sim_obs_ref <- function(anc_list, params, real_data, sample_counts){
   
@@ -266,7 +287,7 @@ sim_obs_ref <- function(anc_list, params, real_data, sample_counts){
     pop_matrix = pop_matrix + popmatrixadd
   }
   
-  # Calcluate allele frequencies
+  # Calcluate allele frequencies for simulated observed group
   master_frame_gen1 <- data.frame(refdat[,c(1:4)], pop_matrix)
   master_frame_gen1$AF <- (2 * master_frame_gen1[,5] + master_frame_gen1[,6]) / (2 * ntot)
   
@@ -283,6 +304,7 @@ sim_obs_ref <- function(anc_list, params, real_data, sample_counts){
   set.seed(seed)
   print(paste0('seed 2', seed))
   
+  #simulate allele counts and calculate simulated allele frequencies for each of the reference groups
   refsims = as.data.frame(matrix(0, nrow = nrow(refdat), ncol = length(anc_list)))   
   for (i in 1:ancnum){
     refsimcount = t(sapply(refdat[[as.character(ancvec[1,i])]], function(x){x2<-as.numeric(x); rmultinom(1, as.numeric(sample_counts[i]), prob=(c(x2**2, 2*x2*(1-x2), (1-x2)**2)))}))
@@ -296,7 +318,7 @@ sim_obs_ref <- function(anc_list, params, real_data, sample_counts){
   names(mergeframe) = c(names(real_data), paste0('sim_', anc_list), "Simulated_AF")  
   
   
-  
+  #return original data, simulated reference group AFs, and simulated observed group AF
   return(mergeframe)
 }
 

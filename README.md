@@ -6,28 +6,37 @@
 <!-- badges: start -->
 <!-- badges: end -->
 
-The goal of Summix2_manuscript is to … Updating..
+In this repository you will find files containing the code used to test
+Summix2 (bioconductor link), as described by this manuscript: (bioRxiv
+link)…. as well as code used to merge and MAF filter the gnomAD v3.1.2
+data for analysis.
 
-What is special about using `README.Rmd` instead of just `README.md`?
-You can include R chunks like so:
+Below is an outline of the folders in this repository and their
+contents.
 
-``` r
-summary(cars)
-#>      speed           dist       
-#>  Min.   : 4.0   Min.   :  2.00  
-#>  1st Qu.:12.0   1st Qu.: 26.00  
-#>  Median :15.0   Median : 36.00  
-#>  Mean   :15.4   Mean   : 42.98  
-#>  3rd Qu.:19.0   3rd Qu.: 56.00  
-#>  Max.   :25.0   Max.   :120.00
-```
+<br> <br> <br>
 
-You’ll still need to render `README.Rmd` regularly, to keep `README.md`
-up-to-date.
+<font size="5">[**gnomAD v3.1.2 Merge & MAF
+filter**](https://github.com/hendriau/Summix2_manuscript/tree/main/gnomAD%20v3.1.2%20Merge%20%26%20MAF%20filter)
+folder: </font>
 
-You can also embed plots, for example:
+[**chr1_gnomADv3.1.2_merge.sh**](https://github.com/hendriau/Summix2_manuscript/blob/main/gnomAD%20v3.1.2%20Merge%20%26%20MAF%20filter/chr1_gnomADv3.1.2_merge.sh)
+contains the code used to complete the merge of gnomAD v3.1.2 whole
+genome variants with Human Genetic Diversity Project (HGDP) and 1000
+Genomes Project (1KG) whole genome variants released in gnomAD v3.1.2 as
+separate vcf files. Note: This code was used to merge across chromosome
+1; the same code- with only chromosome number modified- was used to
+merge across chromosomes 2-22.
 
-![](README_files/figure-gfm/pressure-1.png)<!-- -->
+To read more about this data, proceed to the [**gnomAD v3.1 blog
+post**](https://gnomad.broadinstitute.org/news/2020-10-gnomad-v3-1-new-content-methods-annotations-and-data-availability/)
+and then to the [**gnomAD v3.1.2 blog
+post**](https://gnomad.broadinstitute.org/news/2021-10-gnomad-v3-1-2-minor-release/),
+which describes updates made to the gnomAD v3.1 data release.
 
-In that case, don’t forget to commit and push the resulting figure
-files, so they display on GitHub.
+[**Filter_Allele_Freq_chr1.R**](https://github.com/hendriau/Summix2_manuscript/blob/main/gnomAD%20v3.1.2%20Merge%20%26%20MAF%20filter/Filter_Allele_Freq_chr1.R)
+contains the code used to filter for a MAF \>= .01 in at least one
+finer-scale reference group within the merged gnomAD v3.1.2 and HGDP &
+1KG data. Note: This code was used to filter across chromosome 1 SNPs;
+the same code- with only chromosome number modified- was used to filter
+across chromosomes 2-22 SNPs.

@@ -40,3 +40,21 @@ finer-scale reference group within the merged gnomAD v3.1.2 and HGDP &
 1KG data. Note: This code was used to filter across chromosome 1 SNPs;
 the same code- with only chromosome number modified- was used to filter
 across chromosomes 2-22 SNPs.
+
+<br> <br>
+
+[**Simulations/Finer-Scale
+Substructure**](https://github.com/hendriau/Summix2_manuscript/tree/main/Simulations/Finer-Scale%20Substructure)
+folder:
+
+[**finer_scale_set_parameters.R**](https://github.com/hendriau/Summix2_manuscript/blob/main/Simulations/Finer-Scale%20Substructure/finer_scale_set_parameters.R)
+
+[**finer_scale_simulation_code**](https://github.com/hendriau/Summix2_manuscript/blob/main/Simulations/Finer-Scale%20Substructure/finer_scale_simulation_code.R)
+
+<br> [**Simulations/Local
+Substructure**](https://github.com/hendriau/Summix2_manuscript/tree/main/Simulations/Local%20Substructure)
+subfolder:
+
+[**local_simulation_code.R**](https://github.com/hendriau/Summix2_manuscript/blob/main/Simulations/Local%20Substructure/local_simulation_code.R)
+
+[**simulation_code.R**](https://github.com/hendriau/Summix2_manuscript/blob/main/Simulations/Local%20Substructure/simulation_code.R)

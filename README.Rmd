@@ -68,5 +68,6 @@ gnomAD v3.1.2 Finnish and HGDP Finnish allele frequencies had the same names and
 <br>
 
  [**Data**](https://github.com/hendriau/Summix2_manuscript/tree/main/data) folder: 
+ It's 35,000 random variants from chromosome 19 with gnomAD LAI, simulated Latinx-like finer-scale substructure
  
  

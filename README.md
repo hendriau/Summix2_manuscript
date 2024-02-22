@@ -76,4 +76,5 @@ folder:
 <br> <br>
 
 [**Data**](https://github.com/hendriau/Summix2_manuscript/tree/main/data)
-folder:
+folder: It’s 35,000 random variants from chromosome 19 with gnomAD LAI,
+simulated Latinx-like finer-scale substructure

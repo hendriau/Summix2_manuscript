@@ -1,0 +1,104 @@
+###############################################################################
+Summix2_manuscript/data/Data.gz README
+###############################################################################
+Data includes 35,000 SNPs randomly sampled from LD filtered (r^2>.8) chromosome 19 merged gnomAD v3.1.2 and Human Genome Diversity Project (HGDP) and 1000 Genomes (1KG).
+Data contains 35,000 rows and XX columns with allele frequency (AF), allele count (AC), and allele number (AN), and number of nonhomologous alleles (nhomalt) across all HGDP and 1KG finer scale reference groups and gnomAD v3.1.2 groups and group subsets (outlined below). 
+
+Human Genome Diversity Project and 1000 Genomes finer-scale reference groups: 
+acb		African Carribean
+adygei		Adygei
+asw		African-American 
+balochi		Balochi
+bantukenya	Bantukenya
+bantusafrica	Bantusafrica
+basque		Basque
+beb		Bengali
+bedouin		Bedouin
+brahui		Brahui
+burusho		Burusho
+cambodian	Cambodian
+cdx		Chinese Dai
+ceu		Utah Residents (European ancestry)
+chb		Han Chinese
+chs		Southern Han Chinese
+clm		Colombian
+colombian	Colombian
+dai		Dai
+daur		Daur
+druze		Druze
+esn		Esan
+fin		Finnish
+french		French
+gbr		British
+gih		Gujarati
+gwd		Gambian
+han		Han
+hazara		Hazara
+hezhen		Hezhen
+ibs		Iberian
+italian		Italian
+itu		Indian Telugu
+japanese	Japanese
+jpt		Japanese
+kalash		Kalash
+karitiana	Karitiana
+khv		Kinh
+lahu		Lahu
+lwk		Luhya
+makrani		Makrani
+mandenka	Mandenka
+maya		Maya
+miaozu		Miaozu
+mongola		Mongola
+mozabite	Mozabite
+msl		Mende
+mxl		Mexican-American
+naxi		Naxi
+orcadian	Orcadian
+oroqen		Oroquen
+palestinian	Palestinian
+pathan		Pathan
+pel		Peruvian
+pima		Pima
+pjl		Punjabi
+pur		Puerto Rican
+russian		Russian
+sardinian	Sardinian
+she		She
+sindhi		Sindhi
+stu		Sri Lankan Tamil
+surui		Surui
+tsi		Toscani
+tu		Tu
+tujia		Tujia
+tuscan		Tuscan
+uygur		Uygur
+xibo		Xibo
+yakut		Yakut
+yizu		Yizu
+yoruba		Yoruba
+yri		Yoruba
+
+
+gnomAD v3.1.2 groups:
+afr     African/African-American	
+ami	Amish	
+amr	Latino/Admixed American	
+asj	Ashkenazi Jewish	
+eas	East Asian	
+fin	Finnish	
+nfe	Non-Finnish European	
+mid	Middle Eastern	
+sas	South Asian	
+oth	Other (population not assigned)
+
+gnomAD v3.1.2 group subsets:
+non-cancer
+non-neuro
+non-v2
+non-TOPMed
+controls/biobanks
+
+
+Note: All files in this folder were downloaded directly from https://gnomad.broadinstitute.org/downloads, from the gnomAD v3 Downloads tab, in November, 2021.
+

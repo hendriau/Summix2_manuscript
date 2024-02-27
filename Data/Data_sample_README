@@ -2,7 +2,7 @@
 Summix2_manuscript/data/Data.gz README
 ###############################################################################
 Data includes 35,000 SNPs randomly sampled from LD filtered (r^2>.8) chromosome 19 merged gnomAD v3.1.2 and Human Genome Diversity Project (HGDP) and 1000 Genomes (1KG).
-Data contains 35,000 rows and XX columns with allele frequency (AF), allele count (AC), and allele number (AN), and number of nonhomologous alleles (nhomalt) across all HGDP and 1KG finer scale reference groups and gnomAD v3.1.2 groups and group subsets (outlined below). 
+Data contains 35,000 rows and XX columns with allele frequency (AF), allele count (AC), and allele number (AN), and number of nonhomologous alleles (nhomalt) across all HGDP and 1KG finer scale reference groups (includes all finer-scale groups released with gnomAD v3.1.2) and gnomAD v3.1.2 groups and group subsets; groups outlined below. 
 
 Human Genome Diversity Project and 1000 Genomes finer-scale reference groups: 
 acb		African Carribean

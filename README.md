@@ -7,8 +7,9 @@
 <!-- badges: end -->
 
 In this repository you will find files containing the code used to test
-Summix2 (bioconductor link), as described by this manuscript: (bioRxiv
-link)…. as well as code used to merge and MAF filter the gnomAD v3.1.2
+Summix2 (https://www.bioconductor.org/packages/release/bioc/html/Summix.html), 
+as described by this manuscript: (https://www.biorxiv.org/content/10.1101/2024.01.29.577805v3),
+as well as code used to merge and MAF filter the gnomAD v3.1.2
 data for analysis.
 
 Below is an outline of the folders in this repository and their

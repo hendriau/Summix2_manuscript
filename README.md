@@ -19,7 +19,7 @@ contents.
 
 <br> <br> <br>
 
-#<font size="5">[**Data Merge & MAF
+<font size="5">[**Data Merge & MAF
 filter**](https://github.com/hendriau/Summix2_manuscript/tree/main/Data%20Merge%20%26%20MAF%20filter)
 folder: </font>
 
@@ -60,7 +60,7 @@ following three files:
 
 <br> <br>
 
-#<font size="5">[**Simulations/Finer-Scale
+<font size="5">[**Simulations/Finer-Scale
 Substructure**](https://github.com/hendriau/Summix2_manuscript/tree/main/Simulations/Finer-Scale%20Substructure)
 folder: </font>
 
@@ -75,7 +75,7 @@ reference group mixing proportions in the observed group, then records
 the difference between Summix2 proportion estimates and simulated mixing
 parameters.
 
-#<br> <font size="5">[**Simulations/Local
+<br> <font size="5">[**Simulations/Local
 Substructure**](https://github.com/hendriau/Summix2_manuscript/tree/main/Simulations/Local%20Substructure)
 folder:</font>
 
@@ -93,7 +93,7 @@ finer-scale and 5 continental level references.
 
 <br> <br>
 
-#<font size="5">[**Data**](https://github.com/hendriau/Summix2_manuscript/tree/main/Data)
+<font size="5">[**Data**](https://github.com/hendriau/Summix2_manuscript/tree/main/Data)
 folder: </font> <br> Contains gnomAD v3.1.2, 1KG, and HGDP real AF data
 across 35,000 variants randomly sampled from LD 0.2 filtered chromosome
 19. Also included are AFs for 50 simulated finer-scale references

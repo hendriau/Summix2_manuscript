@@ -1,8 +1,13 @@
 ###############################################################################
 Summix2_manuscript/data/Data.gz README
 ###############################################################################
-Data includes 35,000 SNPs randomly sampled from LD filtered (r^2>.8) chromosome 19 merged gnomAD v3.1.2 and Human Genome Diversity Project (HGDP) and 1000 Genomes (1KG).
-Data contains 35,000 rows and XX columns with allele frequency (AF), allele count (AC), and allele number (AN), and number of nonhomologous alleles (nhomalt) across all HGDP and 1KG finer scale reference groups (includes all finer-scale groups released with gnomAD v3.1.2) and gnomAD v3.1.2 groups and group subsets; groups outlined below. 
+Data includes 35,000 SNPs randomly sampled from LD filtered (r^2<.2) chromosome 19 merged gnomAD v3.1.2 and Human Genome Diversity Project (HGDP) and 1000 Genomes (1KG).
+Data contains 35,000 rows and 639 columns with allele frequency (AF), allele count (AC), and allele number (AN), and number of nonhomologous alleles (nhomalt) across all HGDP and 1KG finer scale reference groups (includes all finer-scale groups released with gnomAD v3.1.2) and gnomAD v3.1.2 groups and group subsets, as well as continental level groups; groups outlined below. 
+
+Also included are AFs for 50 simulated finer-scale references groups (simulated with n=200), 5 simulated continental reference groups (simulated with n=500) and an observed group simulated with 1KG-Pel-like proportions (45% HGDP-Maya-like, 10% HGDP-Karitiana-like, 10% HGDP-Pima-like, 10% HGDP-Colombian-like, 5% 1KG-Esn-like, 5% 1KG-Yri-like, 8% 1KG-Gbr-like, and 7% 1KG-Ibs-like); columns including simulated data outlined below.
+
+
+
 
 Human Genome Diversity Project and 1000 Genomes finer-scale reference groups: 
 acb		African Carribean
@@ -92,6 +97,7 @@ mid	Middle Eastern
 sas	South Asian	
 oth	Other (population not assigned)
 
+
 gnomAD v3.1.2 group subsets:
 non-cancer
 non-neuro
@@ -100,5 +106,81 @@ non-TOPMed
 controls/biobanks
 
 
-Note: All files in this folder were downloaded directly from https://gnomad.broadinstitute.org/downloads, from the gnomAD v3 Downloads tab, in November, 2021.
+continental-level groups:
+AF_AFR
+AF_EAS
+AF_EUR
+AF_IAM
+AF_SAS
+
+Note: All data (with the exception of the continental-level groups, which were calculated as a weighted average of the finer-scale groups) above was downloaded directly from https://gnomad.broadinstitute.org/downloads, from the gnomAD v3.1.2 Downloads tab, in November, 2021.
+
+
+50 simulated finer-scale references groups:
+sim_bantukenya
+sim_bantusafrica
+sim_basque
+sim_beb
+sim_cambodian
+sim_cdx
+sim_ceu
+sim_chb
+sim_chs
+sim_colombian
+sim_dai
+sim_daur
+sim_esn
+sim_fin
+sim_french
+sim_gbr
+sim_gih
+sim_gwd
+sim_han
+sim_hezhen
+sim_ibs
+sim_italian
+sim_itu
+sim_japanese
+sim_jpt
+sim_karitiana
+sim_khv
+sim_lahu
+sim_lwk
+sim_mandenka
+sim_maya
+sim_miaozu
+sim_mongola
+sim_msl
+sim_naxi
+sim_orcadian
+sim_oroqen
+sim_pima
+sim_pjl
+sim_sardinian
+sim_she
+sim_stu
+sim_tsi
+sim_tu
+sim_tujia
+sim_tuscan
+sim_xibo
+sim_yizu
+sim_yoruba
+sim_yri
+
+
+5 simulated continental reference groups:
+sim_AFR
+sim_EAS
+sim_EUR
+sim_IAM
+sim_SAS
+
+
+Observed group simulated with 1KG-Pel-like proportions:
+Simulated_AF
+
+
+
+
 

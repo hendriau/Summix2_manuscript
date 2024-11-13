@@ -75,6 +75,9 @@ folder:
 
 <br> <br>
 
-[**Data**](https://github.com/hendriau/Summix2_manuscript/tree/main/data)
-folder: It’s 35,000 random variants from chromosome 19 with gnomAD LAI,
-simulated Latinx-like finer-scale substructure
+[**Data**](https://github.com/hendriau/Summix2_manuscript/tree/main/Data)
+folder: Contains gnomAD v3.1.2, 1KG, and HGDP real AF data across 35,000
+variants randomly sampled from LD 0.2 filtered chromosome 19. Also
+included are AFs for 50 simulated finer-scale references (simulated with
+n=200), 5 simulated continental references (simulated with n=500), and
+an observed group simulated with 1KG-Pel-like proportions.

@@ -20,10 +20,10 @@ contents.
 <br> <br> <br>
 
 <font size="5">[**Data Merge & MAF
-filter**](https://github.com/hendriau/Summix2_manuscript/tree/main/gnomAD%20v3.1.2%20Merge%20%26%20MAF%20filter)
+filter**](https://github.com/hendriau/Summix2_manuscript/tree/main/Data%20Merge%20%26%20MAF%20filter)
 folder: </font>
 
-[chr1_gnomADv3.1.2_merge.sh](https://github.com/hendriau/Summix2_manuscript/blob/main/gnomAD%20v3.1.2%20Merge%20%26%20MAF%20filter/chr1_gnomADv3.1.2_merge.sh)
+[chr1_gnomADv3.1.2_merge.sh](https://github.com/hendriau/Summix2_manuscript/blob/main/Data%20Merge%20%26%20MAF%20filter/chr1_gnomADv3.1.2_merge.sh)
 contains the code used to complete the merge of gnomAD v3.1.2 whole
 genome variants with Human Genetic Diversity Project (HGDP) and 1000
 Genomes Project (1KG) whole genome variants released in gnomAD v3.1.2 as
@@ -35,12 +35,12 @@ and then to the [gnomAD v3.1.2 blog
 post](https://gnomad.broadinstitute.org/news/2021-10-gnomad-v3-1-2-minor-release/),
 which describes updates made to the gnomAD v3.1 data release.
 
-[Filter_Allele_Freq_chr1.R](https://github.com/hendriau/Summix2_manuscript/blob/main/gnomAD%20v3.1.2%20Merge%20%26%20MAF%20filter/Filter_Allele_Freq_chr1.R)
+[Filter_Allele_Freq_chr1.R](https://github.com/hendriau/Summix2_manuscript/blob/main/Data%20Merge%20%26%20MAF%20filter/Filter_Allele_Freq_chr1.R)
 contains the code used to filter for a MAF \>= .01 in at least one
 finer-scale reference group within the merged gnomAD v3.1.2 and HGDP &
 1KG data.
 
-[Cont_Allele_Freq_chr1.R](https://github.com/hendriau/Summix2_manuscript/blob/main/gnomAD%20v3.1.2%20Merge%20%26%20MAF%20filter/Cont_Allele_Freq_chr1.R)
+[Cont_Allele_Freq_chr1.R](https://github.com/hendriau/Summix2_manuscript/blob/main/Data%20Merge%20%26%20MAF%20filter/Cont_Allele_Freq_chr1.R)
 contains the code used to create continental-level allele frequencies
 via a weighted average of the finer-scale reference groups in each
 continental groupings as well as an additional MAF \>= .01 across
@@ -52,11 +52,11 @@ columns was redone and files were filtered for MAF \>= 0.01 across
 finer-scale reference groups and continental level groups in the
 following three files:
 
-[expand_hgdp_1kg_INFO_fin_redo.sh](https://github.com/hendriau/Summix2_manuscript/blob/main/gnomAD%20v3.1.2%20Merge%20%26%20MAF%20filter/expand_hgdp_1kg_INFO_fin_redo.sh)
+[expand_hgdp_1kg_INFO_fin_redo.sh](https://github.com/hendriau/Summix2_manuscript/blob/main/Data%20Merge%20%26%20MAF%20filter/expand_hgdp_1kg_INFO_fin_redo.sh)
 
-[FIN_data_merge.R](https://github.com/hendriau/Summix2_manuscript/blob/main/gnomAD%20v3.1.2%20Merge%20%26%20MAF%20filter/FIN_data_merge.R)
+[FIN_data_merge.R](https://github.com/hendriau/Summix2_manuscript/blob/main/Data%20Merge%20%26%20MAF%20filter/FIN_data_merge.R)
 
-[FIN_data_merge_cont.R](https://github.com/hendriau/Summix2_manuscript/blob/main/gnomAD%20v3.1.2%20Merge%20%26%20MAF%20filter/FIN_data_merge_cont.R)
+[FIN_data_merge_cont.R](https://github.com/hendriau/Summix2_manuscript/blob/main/Data%20Merge%20%26%20MAF%20filter/FIN_data_merge_cont.R)
 
 <br> <br>
 
